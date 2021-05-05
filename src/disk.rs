@@ -6,7 +6,7 @@ use std::{
 
 pub const PAGE_SIZE: usize = 4096;
 
-#[derive(Eq, PartialEq, Copy, Clone)]
+#[derive(Eq, PartialEq, Copy, Clone, Debug, Hash)]
 pub struct PageId(pub u64);
 
 impl PageId {
